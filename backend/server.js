@@ -12,7 +12,7 @@ connectDB();
 const app = express();
 
 app.use(express.json());
-app.use(cookieParser());
+app.use(cookieParser());//help in parsing the cookie for jwt token in middleware
 app.use(cors());
 
 const __dirname = path.resolve();
