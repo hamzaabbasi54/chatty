@@ -16,7 +16,7 @@ export const protectRoute = async (req, res, next) => {
         //so we dont have to query the db to get the user in every controller
         req.user = user;
         next();
-    } catch (error) {
+    } catch (error) {        
         console.log(error)
         return res.status(500)
             .json({ message: "Internal server error" })
