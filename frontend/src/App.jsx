@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes, Route } from 'react-router'
 import Chatpage from './pages/Chat.jsx'
 import Login from './pages/Login.jsx'
-import Signup from './pages/signup.jsx'
+import Signup from './pages/Signup.jsx'
 function App() {
   return (
 
