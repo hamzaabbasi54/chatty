@@ -13,7 +13,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cookieParser());//help in parsing the cookie for jwt token in middleware
-app.use(cors());
+app.use(cors({origin:process.env.CLIENT_URL,credentials:true}));
 
 const __dirname = path.resolve();
 
